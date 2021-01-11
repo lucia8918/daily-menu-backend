@@ -1,0 +1,27 @@
+### 후기 조회
+GET http://localhost:8080/comments
+
+### 후기 생성
+POST http://localhost:8080/comments
+Content-Type: application/json
+
+{
+  "mealId": 1,
+  "nickName": "Paden",
+  "mealComment": "맛있어요"
+}
+
+### 후기 수정
+PUT http://localhost:8080/comments/6
+Content-Type: application/json
+
+{
+  "nickName": "Paden",
+  "mealComment": "Coupon-modify"
+}
+
+### 후기 삭제
+DELETE http://localhost:8080/comments/6
+
+### 후기 개수 조회
+GET http://localhost:8080/comments/1/count

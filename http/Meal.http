@@ -1,0 +1,25 @@
+### 후기 조회
+GET http://localhost:8080/meals/1/comments
+
+### 후기 개수 조회
+GET http://localhost:8080/meals/1/comments/count
+
+### 후기 추가
+POST http://localhost:8080/meals/1/comment
+Content-Type: application/json
+
+{
+  "nickName": "Paden",
+  "comment": "맛있어요!!"
+}
+
+### 좋아요 개수 조회
+GET http://localhost:8080/meals/1/likes/count
+
+### 좋아요 추가
+POST http://localhost:8080/meals/1/like
+Content-Type: application/json
+
+{
+  "nickName": "Paden"
+}
